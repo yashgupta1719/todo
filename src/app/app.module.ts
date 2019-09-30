@@ -12,6 +12,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { TodoInputComponent } from './todo-input/todo-input.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { FormsModule} from '@angular/forms';
+import { Todow } from './todow.service';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,12 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     MatCardModule,
     MatCheckboxModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    FormsModule
 
     
   ],
-  providers: [],
+  providers: [Todow],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

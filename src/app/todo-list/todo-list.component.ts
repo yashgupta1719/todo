@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Todow } from '../todow.service';
 
 @Component({
   selector: 'app-todo-list',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wr:Todow) { }
 
   ngOnInit() {
+    this.WorkList= this.wr.getWork();
   }
-
+  WorkList=[]
+  su(name){
+    this.WorkList.splice(this.WorkList.indexOf(name),1);
+  }
 }
