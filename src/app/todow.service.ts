@@ -11,4 +11,7 @@ getWork(){
 setWork(wl){
     this.WorkList.push(wl)
 }
+getdel(name){
+    this.WorkList.splice(this.WorkList.indexOf(name),1);
+}
 }

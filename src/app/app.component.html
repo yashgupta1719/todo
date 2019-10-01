@@ -1,6 +1,6 @@
 <app-todo-header></app-todo-header>
-<h1 id="hh" color="primary">Enter the Work</h1>
+<h1 id="hh" color="primary">Todo List</h1>
 <br>
-<input type="text" [(ngModel)]="w" name="work" id="myid" class="text-center">
-<button (click)="addWork()">Add Work</button> 
+<input type="text" [(ngModel)]="w" name="work" id="myid" class="text-center" placeholder="Enter the task here">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button mat-button id ="bb1" (click)="addWork()" color=""  >Add Work</button><br><br><br><br>
 <app-todo-list></app-todo-list>

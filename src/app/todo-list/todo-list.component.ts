@@ -15,6 +15,7 @@ export class TodoListComponent implements OnInit {
   }
   WorkList=[]
   su(name){
-    this.WorkList.splice(this.WorkList.indexOf(name),1);
+    this.wr.getdel(name);
   }
+
 }

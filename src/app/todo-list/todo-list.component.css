@@ -1,4 +1,7 @@
 #cdid{
-    margin-left: 350px; 
+    margin-left: 440px; 
     margin-right: 300px;
+}
+.done{
+    text-decoration: line-through;
 }
